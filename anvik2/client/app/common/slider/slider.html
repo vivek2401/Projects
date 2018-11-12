@@ -1,0 +1,40 @@
+
+<i ng-click="$ctrl.cancel()" class="fa fa-times fa-2x navmenubutton" id="gallerymenu" ></i>
+
+<!-- <div class="sliderouter" flex> -->
+  <div class="sliderinner" flex>
+<div layout="row">
+  <div class="ul"  flex>
+    <!-- <ul flex> -->
+      <li ng-click="$ctrl.leftimg()" ng-keypress="$event.keyCode === 37" flex>
+<i class="fa fa-chevron-left" aria-hidden="true"></i>
+      </li>
+    <!-- </ul> -->
+   </div>
+  <div flex="70" style="position: relative;">
+<!-- <img class="imgclass md-whiteframe-8dp" ng-src={{$ctrl.imgsrc}} /> -->
+<div class="sliderbackgroundinner">
+  <ul flex>
+    <li flex>ANVIK CLICKS</li>
+    <!-- <li flex></li> -->
+    <li class="photo" flex>PHOTOGRAPHY</li>
+  </ul>
+</div>
+
+<div class="sliderbackground" ng-style="$ctrl.style" flex>
+&nbsp;
+</div>
+
+  </div>
+  <div class="ul" flex>
+    <!-- <ul flex> -->
+      <li ng-click="$ctrl.rightimg()" flex>
+<i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </li>
+    <!-- </ul> -->
+   </div>
+</div>
+
+    <div >
+  </div>
+</div>

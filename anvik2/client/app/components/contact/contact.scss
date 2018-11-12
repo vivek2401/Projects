@@ -1,0 +1,30 @@
+@import '../../common/common';
+
+
+
+
+.contact {
+  // background: url(../../../images/background.jpg) no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+}
+
+.contactanvik {
+  background-color:  #292929;
+  margin-bottom: 60px;
+  padding: 200px 7%;
+  color: white;
+  p {
+    font-size: 25px;
+    line-height: 35px;
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+  span {
+    font-family: 'Megrim', sans-serif;
+    font-weight: bold;
+    font-size: 32px; line-height: 45px;
+  }
+}

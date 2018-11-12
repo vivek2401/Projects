@@ -1,0 +1,51 @@
+@import '../common';
+
+
+.sidenav {
+  color: $lightTextColor;
+  width: 130px;
+  background: #2C2A34;
+}
+
+.line {
+  border-bottom: 1px solid #787878;
+  i {
+    color:white;
+    font-size: 42px;
+    display: block;
+    text-align: center;
+  }
+  i {
+    visibility: visible;
+  }
+  span {
+    display: block;
+    text-align: center;
+    font-size:12px;
+    visibility: hidden;
+  }
+
+}
+.sidenav:hover {
+  span {
+    visibility: visible;
+  }
+}
+.lineb {
+  border-bottom: 3px solid red;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+}
+.line  span {
+  padding-top:5px;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.icon {
+//  line-height: 60px;
+  // font-size: 30px;
+//  display: inline-block;
+}

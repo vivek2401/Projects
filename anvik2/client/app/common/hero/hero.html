@@ -1,0 +1,59 @@
+
+<!-- <md-button    layout="row" layout-align='center center'> -->
+<i ng-click="$ctrl.toggle()" class="fa fa-bars fa-2x navbutton" id="homemenu"></i>
+<!-- </md-button> -->
+
+<div ng-click="$ctrl.movetogallery()"  hide show-gt-sm  ng-repeat="src in $ctrl.slides track by $index"  flex>
+<div ng-class="src" class="heroout" ng-show="$ctrl.currentIndex == $index" flex>
+</div>
+<!-- <div class="heroinner" flex> -->
+  <!-- <div class="herologoinner">
+<center>
+  &nbsp;
+  <span>ANVIK CLICKS</span>
+</center>
+</div> -->
+ <!-- <ul flex>
+   <li flex>ANVIK CLICKS</li>
+   <li class="photo" flex>PHOTOGRAPHY</li>
+ </ul> -->
+ <!-- <ul flex>
+   <li ng-click="$ctrl.menuclick('home')" flex>HOME</li>
+   <li ng-click="$ctrl.menuclick('gallery')" flex>GALLERY</li>
+   <li ng-click="$ctrl.menuclick('about')" flex>ABOUT</li>
+   <li ng-click="$ctrl.menuclick('contact')" flex>CONTACT</li>
+ </ul> -->
+<!-- </div> -->
+</div>
+
+<div ng-click="$ctrl.movetogallery()"  hide show-sm show-xs  ng-repeat="src in $ctrl.slides track by $index"  flex>
+<div ng-class="src"  ng-show="$ctrl.currentIndex == $index" flex>
+</div>
+</div>
+
+
+<div style="visibility: hidden">
+  <div class="md-dialog-container" id="myDialog">
+    <md-dialog layout-padding>
+      <menu></menu>
+    </md-dialog>
+  </div>
+</div>
+<!-- <div class="container slider" >
+    <div ng-repeat="slide in $ctrl.slides track by $index" ng-hide="!$ctrl.isCurrentSlideIndex($index)" class="slide" layout="column" >
+
+    </div>
+  <div flex="70" flex-offset="15" class="headertext">
+    <h2 class="md-headline"><center>Welcome to a place, where art lives</center></h2>
+    <h1 class="md-display-3"><center>
+      So..You've arrived</center></h1>
+    <h2 class="md-headline"><center>
+        First off, I want to thank you for taking the time out of your day to visit my site. I Luck'E Davis Founder and Head Photographer at FotoGawdCaptures LLC, want to welcome you , I hope that the art you see here encourages you to want to ARTIfy yourself, whether its Portfolio building for the aspiring Muse , or wedding photos for the big day, enjoy and again thank you - Luck'E Davis
+    </center></h2>
+
+  </div>
+</div> -->
+
+ <!-- <video width="320" height="240" class="master-video" autoplay="autoplay" loop="loop" poster="/">
+   <source ng-src={{$ctrl.src}} type="video/mp4" />
+ </video> -->

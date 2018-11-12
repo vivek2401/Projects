@@ -1,0 +1,51 @@
+@import '../common';
+
+.types {
+  // color: red;
+}
+
+.box {
+  // border:1px solid red;
+  // -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+  // -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+  // box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.categroies {
+  font-family: 'Megrim', sans-serif;
+  font-size: 20px;
+  line-height: 70px;
+  height: 70px;
+  margin-bottom: -20px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-shadow: 0px 0px 9px rgba(150, 150, 150, 1);
+}
+.categroiesactive {
+  color: #16bdfa;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.categroies:focus, .categroiesactive:focus {
+  outline: none;
+  border: 0;
+}
+
+.typedisplay {
+  // width: 100%;
+  img {
+    //width: auto !important;
+    max-width: 100%;
+  //  max-height: 100% !important;
+    display: block;
+    margin: 15px auto;
+  }
+  img:focus {
+    outline: none;
+    border: 0;
+ }
+}
+
+.space {
+  margin: 5px;
+}

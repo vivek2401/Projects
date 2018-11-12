@@ -1,0 +1,46 @@
+@import '../common';
+
+.menu {
+  color: black;
+}
+.navmenubutton {
+  color: black;
+  position: fixed;
+  margin-top: -10px;
+  margin-left: 10px;
+  .fa {
+   color: black;
+ }
+}
+
+.menuouter {
+  min-height: calc(100vh - 50px);
+}
+.menuinner {
+  min-height: 100px;
+  vertical-align: middle;
+  ul {
+  list-style: none;
+  display: table-cell;
+  vertical-align: middle;
+  font-size:4.7vw;
+  line-height: 5.9vw;
+  margin-bottom: 1vw;
+  min-width: 100vw;
+  height: calc(100vh - 50px);
+  }
+  ul li {
+    margin-left: -40px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  ul li:hover {
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+ul li:focus {
+  outline: none;
+  border: 0;
+}
+}

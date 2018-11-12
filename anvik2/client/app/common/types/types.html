@@ -1,0 +1,431 @@
+
+
+<i  ng-click="$ctrl.toggle()" class="fa fa-bars fa-2x navbutton" ></i>
+
+<div layout="row" flex>
+<div class="menuheader" ng-click="$ctrl.gotohome()" flex>
+  <div class='menuheadertitle' >
+    ANVIK CLICKS
+    <br><span class="menuheaderspan">Photography - Cinematography - Event Decorations</span>
+  </div>
+</div>
+</div>
+
+<div class="galleryinner">
+<div  style="position: relative;" flex>
+<div class="gallerybannerinner">
+  <ul flex>
+    <li flex>ANVIK CLICKS</li>
+    <li class="photo" flex>PHOTOGRAPHY</li>
+  </ul>
+</div>
+  <div class="gallerybanner"  flex>
+    <div class="timeline" ng-repeat="src in $ctrl.imgs track by $index">
+      <img class="md-whiteframe-8dp sample-show-hide" ng-src={{src}} ng-show="$index==$ctrl.currentIndex" />
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="gallery" ng-if=$ctrl.url=='maternity' flex>
+
+  <div layout="row" layout-xs='column' layout-sm='column' >
+    <div class="categroies" ng-click="categroies($event,'birthday')" flex="100">
+      <center>Birthday</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'portraits')" flex="100">
+      <center>Portraits</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'weeding')"  flex="100">
+      <center>Wedding</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'couple')" flex="100">
+      <center>Couple</center>
+    </div>
+    <div class="categroies categroiesactive" ng-click="categroies($event,'maternity')" flex="100">
+      <center>Maternity</center>
+    </div>
+  </div>
+
+<!-- <div layout="row" hide show-gt-sm flex="90" flex-offset="5">
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+     <div class="maternity" flex="100" ng-click="showdialog($event,'sam')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.sam[$ctrl.samIndex1]}} />
+     </div>
+   </div>
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+     <div class="maternity" flex="100" ng-click="showdialog($event,'maternity')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.maternity[$ctrl.maternityIndex1]}} />
+     </div>
+   </div>
+</div> -->
+<div layout="row"  flex="100" flex-offset="5" layout-xs="column"  layout-margin="" layout-align="space-around none"
+ layout-wrap="" layout-fill="" ng-cloak=""  >
+   <div layout="column"  flex="45" flex-xs="100" flex-sm="100" ng-repeat="src in $ctrl.Maternity track by $index" >
+     <div class="maternity typedisplay" flex="100" >
+       <img class="md-whiteframe-8dp" ng-src={{src}} />
+     </div>
+   </div>
+</div>
+<!-- <div layout="column" hide show-xs show-sm  flex="90" flex-offset="5">
+  <div class="maternity" flex="100" ng-click="showdialog($event,'sam')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.sam[$ctrl.samIndex1]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'maternity')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.maternity[$ctrl.maternityIndex1]}} />
+  </div>
+</div> -->
+</div>
+
+<div class="gallery" ng-if=$ctrl.url=='weeding'  flex>
+  <div layout="row" layout-xs='column' layout-sm='column' >
+    <div class="categroies" ng-click="categroies($event,'birthday')" flex="100">
+      <center>Birthday</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'portraits')" flex="100">
+      <center>Portraits</center>
+    </div>
+    <div class="categroies categroiesactive" ng-click="categroies($event,'weeding')"  flex="100">
+      <center>wedding</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'couple')" flex="100">
+      <center>Couple</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'maternity')" flex="100">
+      <center>Maternity</center>
+    </div>
+  </div>
+<!-- <div layout="row" hide show-gt-sm flex="90" flex-offset="5">
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+     <div class="wedding" flex="100" ng-click="showdialog($event,'wedding')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.wedding[$ctrl.weddingIndex1]}} />
+     </div>
+   </div>
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+
+   </div>
+</div>
+<div layout="column" hide show-xs show-sm  flex="90" flex-offset="5">
+  <div class="wedding" flex="100" ng-click="showdialog($event,'wedding')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.wedding[$ctrl.weddingIndex1]}} />
+  </div>
+</div> -->
+<!-- ng-click="showdialog($event,'wedding')"  -->
+<div layout="row"  flex="100" flex-offset="5" layout-xs="column"  layout-margin="" layout-align="space-around none"
+ layout-wrap="" layout-fill="" ng-cloak=""  >
+   <div layout="column"  flex="45" flex-xs="100" flex-sm="100"  ng-repeat="src in $ctrl.wedding track by $index" >
+     <div class="maternity typedisplay" flex="100"  >
+       <img class="md-whiteframe-8dp" ng-src={{src}} />
+     </div>
+   </div>
+</div>
+</div>
+
+<div class="gallery" ng-if=$ctrl.url=='birthday'  flex>
+  <div layout="row" layout-xs='column' layout-sm='column' >
+    <div class="categroies categroiesactive" ng-click="categroies($event,'birthday')" flex="100">
+      <center>Birthday</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'portraits')" flex="100">
+      <center>Portraits</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'weeding')"  flex="100">
+      <center>wedding</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'couple')" flex="100">
+      <center>Couple</center>
+    </div>
+    <div class="categroies " ng-click="categroies($event,'maternity')" flex="100">
+      <center>Maternity</center>
+    </div>
+  </div>
+<!-- <div layout="row" hide show-gt-sm flex="90" flex-offset="5">
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+     <div class="maternity" flex="100" ng-click="showdialog($event,'brd')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.brd[$ctrl.brdIndex1]}} />
+     </div>
+   </div>
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+
+   </div>
+</div>
+<div layout="column" hide show-xs show-sm  flex="90" flex-offset="5">
+  <div class="maternity" flex="100" ng-click="showdialog($event,'brd')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.brd[$ctrl.brdIndex1]}} />
+  </div>
+</div> -->
+<div layout="row"  flex="100" flex-offset="5" layout-xs="column"  layout-margin="" layout-align="space-around none"
+ layout-wrap="" layout-fill="" ng-cloak=""  >
+   <div layout="column"  flex="45" flex-xs="100" flex-sm="100"  ng-repeat="src in $ctrl.birthday track by $index" >
+     <div class="maternity typedisplay" flex="100"   >
+       <img class="md-whiteframe-8dp" ng-src={{src}} />
+     </div>
+   </div>
+</div>
+</div>
+
+<div class="gallery" ng-if=$ctrl.url=='portraits'  flex>
+  <div layout="row" layout-xs='column' layout-sm='column' >
+    <div class="categroies" ng-click="categroies($event,'birthday')" flex="100">
+      <center>Birthday</center>
+    </div>
+    <div class="categroies categroiesactive" ng-click="categroies($event,'portraits')" flex="100">
+      <center>Portraits</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'weeding')"  flex="100">
+      <center>wedding</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'couple')" flex="100">
+      <center>Couple</center>
+    </div>
+    <div class="categroies " ng-click="categroies($event,'maternity')" flex="100">
+      <center>Maternity</center>
+    </div>
+  </div>
+<!-- <div layout="row" hide show-gt-sm flex="90" flex-offset="5">
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+     <div class="family" flex="100" ng-click="showdialog($event,'family')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.family[$ctrl.familyIndex1]}} />
+     </div>
+     <div class="maternity" flex="100" ng-click="showdialog($event,'anu')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.anu[$ctrl.anuIndex1]}} />
+     </div>
+     <div class="maternity" flex="100" ng-click="showdialog($event,'solo')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.solo[$ctrl.soloIndex1]}} />
+     </div>
+     <div class="kids" flex="100" ng-click="showdialog($event,'kids')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.kids[$ctrl.kidsIndex1]}} />
+     </div>
+   </div>
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+     <div class="kids" flex="100"  ng-click="showdialog($event,'folder5')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder5[$ctrl.kidsIndex2]}} />
+     </div>
+     <div class="wedding" flex="100" ng-click="showdialog($event,'folder6')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder6[$ctrl.weddingIndex2]}} />
+     </div>
+     <div class="wedding" flex="100" ng-click="showdialog($event,'megna')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.megna[$ctrl.megnaIndex1]}} />
+     </div>
+     <div class="maternity" flex="100"  ng-click="showdialog($event,'folder7')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder7[$ctrl.maternityIndex2]}} />
+     </div>
+     <div class="family" flex="100"  ng-click="showdialog($event,'kids')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.kids[$ctrl.familyIndex2]}} />
+     </div>
+
+   </div>
+</div>
+<div layout="column" hide show-xs show-sm  flex="90" flex-offset="5">
+  <div class="family" flex="100" ng-click="showdialog($event,'family')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.family[$ctrl.familyIndex1]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'anu')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.anu[$ctrl.anuIndex1]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'solo')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.solo[$ctrl.soloIndex1]}} />
+  </div>
+  <div class="kids" flex="100" ng-click="showdialog($event,'kids')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.kids[$ctrl.kidsIndex1]}} />
+  </div>
+  <div class="wedding" flex="100" ng-click="showdialog($event,'folder6')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder6[$ctrl.weddingIndex2]}} />
+  </div>
+  <div class="kids" flex="100"  ng-click="showdialog($event,'folder5')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder5[$ctrl.kidsIndex2]}} />
+  </div>
+  <div class="wedding" flex="100" ng-click="showdialog($event,'megna')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.megna[$ctrl.megnaIndex1]}} />
+  </div>
+  <div class="maternity" flex="100"  ng-click="showdialog($event,'folder7')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder7[$ctrl.maternityIndex2]}} />
+  </div>
+  <div class="family" flex="100"  ng-click="showdialog($event,'kids')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.kids[$ctrl.familyIndex2]}} />
+  </div>
+</div> -->
+<div layout="row"  flex="100" flex-offset="5" layout-xs="column"  layout-margin="" layout-align="space-around none"
+ layout-wrap="" layout-fill="" ng-cloak=""  >
+   <div layout="column"  flex="45" flex-xs="100" flex-sm="100"  ng-repeat="src in $ctrl.Portraits track by $index" >
+     <div class="maternity typedisplay" flex="100"  >
+       <img class="md-whiteframe-8dp" ng-src={{src}} />
+     </div>
+   </div>
+</div>
+</div>
+
+
+<div class="gallery" ng-if=$ctrl.url=='couple'  flex>
+  <div layout="row" layout-xs='column' layout-sm='column' >
+    <div class="categroies" ng-click="categroies($event,'birthday')" flex="100">
+      <center>Birthday</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'portraits')" flex="100">
+      <center>Portraits</center>
+    </div>
+    <div class="categroies" ng-click="categroies($event,'weeding')"  flex="100">
+      <center>wedding</center>
+    </div>
+    <div class="categroies categroiesactive" ng-click="categroies($event,'couple')" flex="100">
+      <center>Couple</center>
+    </div>
+    <div class="categroies " ng-click="categroies($event,'maternity')" flex="100">
+      <center>Maternity</center>
+    </div>
+  </div>
+<!-- <div layout="row" hide show-gt-sm flex="100" flex-offset="5" layout-xs="column"  layout-margin="" layout-align="space-around none"
+ layout-wrap="" layout-fill="" ng-cloak=""  >
+   <div layout="column"  flex="100"  ng-repeat="src in $ctrl.shiva track by $index" >
+     <div class="maternity typedisplay" flex="100" ng-click="showdialog($event,'shiva')"  >
+       <img class="md-whiteframe-8dp" ng-src={{src}} />
+     </div>
+   </div>
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+     <div class="family" flex="100"  ng-click="showdialog($event,'couple')" >
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.couple[$ctrl.coupleIndex2]}} />
+     </div>
+
+   </div>
+</div>
+<div layout="column" hide show-xs show-sm  flex="90" flex-offset="5">
+  <div class="maternity" flex="100" ng-click="showdialog($event,'shiva')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.shiva[$ctrl.shivaIndex1]}} />
+  </div>
+  <div class="family" flex="100"  ng-click="showdialog($event,'couple')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.couple[$ctrl.coupleIndex2]}} />
+  </div>
+</div> -->
+<div layout="row"  flex="100" flex-offset="5" layout-xs="column"  layout-margin="" layout-align="space-around none"
+ layout-wrap="" layout-fill="" ng-cloak=""  >
+   <div layout="column"  flex="45" flex-xs="100" flex-sm="100"  ng-repeat="src in $ctrl.Engagement track by $index" >
+     <div class="maternity typedisplay" flex="100"  >
+       <img class="md-whiteframe-8dp" ng-src={{src}} />
+     </div>
+   </div>
+</div>
+</div>
+
+
+
+<!--
+<div class="gallery"  flex>
+
+<div layout="row" hide show-gt-sm flex="90" flex-offset="5">
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+    <div class="family" flex="100" ng-click="showdialog($event,'family')" >
+      <img class="md-whiteframe-8dp" ng-src={{$ctrl.family[$ctrl.familyIndex1]}} />
+    </div>
+    <div class="wedding" flex="100" ng-click="showdialog($event,'wedding')" >
+      <img class="md-whiteframe-8dp" ng-src={{$ctrl.wedding[$ctrl.weddingIndex1]}} />
+    </div>
+    <div class="maternity" flex="100" ng-click="showdialog($event,'anu')" >
+      <img class="md-whiteframe-8dp" ng-src={{$ctrl.anu[$ctrl.anuIndex1]}} />
+    </div>
+    <div class="maternity" flex="100" ng-click="showdialog($event,'brd')" >
+      <img class="md-whiteframe-8dp" ng-src={{$ctrl.brd[$ctrl.brdIndex1]}} />
+    </div>
+    <div class="maternity" flex="100" ng-click="showdialog($event,'solo')" >
+      <img class="md-whiteframe-8dp" ng-src={{$ctrl.solo[$ctrl.soloIndex1]}} />
+    </div>
+    <div class="maternity" flex="100" ng-click="showdialog($event,'sam')" >
+      <img class="md-whiteframe-8dp" ng-src={{$ctrl.sam[$ctrl.samIndex1]}} />
+    </div>
+    <div class="kids" flex="100" ng-click="showdialog($event,'kids')" >
+      <img class="md-whiteframe-8dp" ng-src={{$ctrl.kids[$ctrl.kidsIndex1]}} />
+    </div>
+  </div>
+  <div layout="column" layout-padding layout-margin layout-fill flex>
+   <div class="kids" flex="100"  ng-click="showdialog($event,'folder5')" >
+     <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder5[$ctrl.kidsIndex2]}} />
+   </div>
+   <div class="wedding" flex="100" ng-click="showdialog($event,'megna')" >
+     <img class="md-whiteframe-8dp" ng-src={{$ctrl.megna[$ctrl.megnaIndex1]}} />
+   </div>
+   <div class="wedding" flex="100" ng-click="showdialog($event,'folder6')" >
+     <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder6[$ctrl.weddingIndex2]}} />
+   </div>
+   <div class="maternity" flex="100" ng-click="showdialog($event,'shiva')" >
+     <img class="md-whiteframe-8dp" ng-src={{$ctrl.shiva[$ctrl.shivaIndex1]}} />
+   </div>
+   <div class="maternity" flex="100"  ng-click="showdialog($event,'folder7')" >
+     <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder7[$ctrl.maternityIndex2]}} />
+   </div>
+   <div class="family" flex="100"  ng-click="showdialog($event,'couple')" >
+     <img class="md-whiteframe-8dp" ng-src={{$ctrl.couple[$ctrl.coupleIndex2]}} />
+   </div>
+   <div class="family" flex="100"  ng-click="showdialog($event,'kids')" >
+     <img class="md-whiteframe-8dp" ng-src={{$ctrl.kids[$ctrl.familyIndex2]}} />
+   </div>
+   <div class="maternity" flex="100" ng-click="showdialog($event,'maternity')" >
+     <img class="md-whiteframe-8dp" ng-src={{$ctrl.maternity[$ctrl.maternityIndex1]}} />
+   </div>
+ </div>
+</div>
+
+
+
+
+<div layout="column" hide show-xs show-sm  flex="90" flex-offset="5">
+  <div class="family" flex="100" ng-click="showdialog($event,'family')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.family[$ctrl.familyIndex1]}} />
+  </div>
+  <div class="wedding" flex="100" ng-click="showdialog($event,'wedding')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.wedding[$ctrl.weddingIndex1]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'sam')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.sam[$ctrl.samIndex1]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'shiva')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.shiva[$ctrl.shivaIndex1]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'anu')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.anu[$ctrl.anuIndex1]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'brd')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.brd[$ctrl.brdIndex1]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'solo')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.solo[$ctrl.soloIndex1]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'couple')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.couple[$ctrl.coupleIndex2]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'anu')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.anu[$ctrl.anuIndex1]}} />
+  </div>
+  <div class="kids" flex="100" ng-click="showdialog($event,'kids')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.kids[$ctrl.kidsIndex1]}} />
+  </div>
+  <div class="kids" flex="100"  ng-click="showdialog($event,'folder5')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder5[$ctrl.kidsIndex2]}} />
+  </div>
+  <div class="wedding" flex="100" ng-click="showdialog($event,'megna')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.megna[$ctrl.megnaIndex1]}} />
+  </div>
+  <div class="wedding" flex="100" ng-click="showdialog($event,'folder6')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder6[$ctrl.weddingIndex2]}} />
+  </div>
+  <div class="maternity" flex="100"  ng-click="showdialog($event,'folder7')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.folder7[$ctrl.maternityIndex2]}} />
+  </div>
+  <div class="family" flex="100"  ng-click="showdialog($event,'kids')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.kids[$ctrl.familyIndex2]}} />
+  </div>
+  <div class="maternity" flex="100" ng-click="showdialog($event,'maternity')" >
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.maternity[$ctrl.maternityIndex1]}} />
+  </div>
+</div>
+
+</div> -->
+
+
+<div style="visibility: hidden">
+  <div class="md-dialog-container" id="myDialog">
+    <md-dialog layout-padding>
+      <menu></menu>
+    </md-dialog>
+  </div>
+</div>

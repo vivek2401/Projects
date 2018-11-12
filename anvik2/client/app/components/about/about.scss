@@ -1,0 +1,69 @@
+@import '../../common/common';
+
+
+.anvik {
+  background: url(../../../images/about.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  margin-bottom: 60px;
+  height: calc(100vh - 100px);
+  min-width: 80%;
+  overflow: hidden;
+  ul {
+  list-style: none;
+  font-family: 'Megrim', sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 5.7vw;
+  line-height: 6.3vw;
+  margin-bottom: 1vw;
+  background: rgba(0,0,0,0.5);
+  min-width: 100vw;
+  height: calc(100vh - 100px);
+  }
+  ul li {
+    margin:0px auto;
+    margin-left: -40px;
+    color: white;
+    display: block;
+    width: 85%;
+    text-align: center;
+  }
+  .photo {
+    font-size: 2.7vw;
+    line-height: 3.3vw;
+  }
+}
+.aboutanvik {
+  background-color: #292929;
+  margin-top: 60px;
+  padding: 200px 7%;
+  color: white;
+  p {
+    font-size: 20px;
+    line-height: 27px;
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+}
+
+.photoanvik {
+  background: url(../../../images/camera.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: calc(100vh - 100px);
+  min-width: 80%;
+  overflow: hidden;
+}
+
+.navbutton {
+  color: black;
+}

@@ -1,0 +1,93 @@
+
+
+<i  ng-click="$ctrl.toggle()" class="fa fa-bars fa-2x navbutton" ></i>
+
+<div layout="row" flex>
+<div class="menuheader" ng-click="$ctrl.gotohome()"  flex="100">
+  <center>
+    ANVIK CLICKS
+    <br><span class="menuheaderspan">Photography - Cinematography - Event Decorations</span>
+  </center>
+</div>
+</div>
+
+<div class="galleryinner">
+<div  style="position: relative;" flex>
+<div class="gallerybannerinner">
+  <ul flex>
+    <li flex>ANVIK CLICKS</li>
+    <li class="photo" flex>PHOTOGRAPHY</li>
+  </ul>
+</div>
+<div class="gallerybanner"  flex>
+  <div class="timeline" ng-repeat="src in $ctrl.imgs track by $index">
+    <img class="md-whiteframe-8dp sample-show-hide" ng-src={{src}} ng-show="$index==$ctrl.currentIndex" />
+  </div>
+</div>
+</div>
+</div>
+
+<div class="gallery"  flex>
+
+<div layout="row" hide show-gt-sm flex="90" flex-offset="5" >
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+     <div class="family" flex="100" ng-click="categroies($event,'birthday')" >
+       <h1>Birthday</h1>
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.brd[$ctrl.brdIndex1]}} />
+     </div>
+     <div class="family" flex="100" ng-click="categroies($event,'weeding')" >
+       <h1>Wedding</h1>
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.wedding[$ctrl.weddingIndex1]}} />
+     </div>
+      <div class="family" flex="100" ng-click="categroies($event,'maternity')" >
+        <h1>Maternity</h1>
+        <img class="md-whiteframe-8dp" ng-src={{$ctrl.sam[$ctrl.samIndex1]}} />
+      </div>
+
+   </div>
+   <div layout="column" layout-padding layout-margin layout-fill flex>
+      <div class="family" flex="100" ng-click="categroies($event,'portraits')" >
+       <h1>Portraits</h1>
+       <img class="md-whiteframe-8dp" ng-src={{$ctrl.anu[$ctrl.anuIndex1]}} />
+      </div>
+      <div class="family" flex="100" ng-click="categroies($event,'couple')" >
+        <h1>Couple</h1>
+        <img class="md-whiteframe-8dp" ng-src={{$ctrl.shiva[$ctrl.shivaIndex1]}} />
+      </div>
+   </div>
+</div>
+
+<div layout="column" hide show-xs show-sm  flex="90" flex-offset="5">
+  <div class="family" flex="100" ng-click="categroies($event,'birthday')" >
+    <h1>Birthday</h1>
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.brd[$ctrl.brdIndex1]}} />
+  </div>
+  <div class="family" flex="100" ng-click="categroies($event,'weeding')" >
+    <h1>Wedding</h1>
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.wedding[$ctrl.weddingIndex1]}} />
+  </div>
+   <div class="family" flex="100" ng-click="categroies($event,'maternity')" >
+     <h1>Maternity</h1>
+     <img class="md-whiteframe-8dp" ng-src={{$ctrl.sam[$ctrl.samIndex1]}} />
+   </div>
+   <div class="family" flex="100" ng-click="categroies($event,'portraits')" >
+    <h1>Portraits</h1>
+    <img class="md-whiteframe-8dp" ng-src={{$ctrl.anu[$ctrl.anuIndex1]}} />
+   </div>
+   <div class="family" flex="100" ng-click="categroies($event,'couple')" >
+     <h1>Couple</h1>
+     <img class="md-whiteframe-8dp" ng-src={{$ctrl.shiva[$ctrl.shivaIndex1]}} />
+   </div>
+</div>
+
+</div>
+
+
+
+<div style="visibility: hidden">
+  <div class="md-dialog-container" id="myDialog">
+    <md-dialog layout-padding>
+      <menu></menu>
+    </md-dialog>
+  </div>
+</div>

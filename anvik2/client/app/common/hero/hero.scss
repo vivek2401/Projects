@@ -1,0 +1,130 @@
+@import '../common';
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+.heroout {
+  transition: all linear 2s;
+  transform: scale(1);
+}
+.heroout.ng-show-animate {
+  transition: all linear 2s;
+  opacity: 1;
+  transform: scale(1);
+}
+.heroout.ng-hide-animate {
+  transition: all linear 0s;
+  opacity: 0;
+  transform: scale(1.3);
+}
+
+.slide0 {
+    background: url(../../../images/Homepage/h1.jpg) no-repeat center center fixed;
+}
+.slide1 {
+    background: url(../../../images/Homepage/h2.jpg) no-repeat center center fixed;
+}
+.slide2 {
+    background: url(../../../images/Homepage/h3.jpg) no-repeat center center fixed;
+}
+.slide3 {
+    background: url(../../../images/Homepage/h4.jpg) no-repeat center center fixed;
+}
+.slide4 {
+    background: url(../../../images/Homepage/h5.jpg) no-repeat center center fixed;
+}
+.slide5 {
+    background: url(../../../images/Homepage/h6.jpg) no-repeat center center fixed;
+}
+.slide6 {
+    background: url(../../../images/Homepage/h7.jpg) no-repeat center center fixed;
+}
+.slide7 {
+    background: url(../../../images/Homepage/h8.jpg) no-repeat center center fixed;
+}
+.slide8 {
+    background: url(../../../images/Homepage/h9.jpg) no-repeat center center fixed;
+}
+.slide9 {
+    background: url(../../../images/Homepage/h10.jpg) no-repeat center center fixed;
+}
+.slide10 {
+    background: url(../../../images/Homepage/h11.jpg) no-repeat center center fixed;
+}
+.slide11 {
+    background: url(../../../images/Homepage/h12.jpg) no-repeat center center fixed;
+}
+.slide12 {
+    background: url(../../../images/Homepage/h13.jpg) no-repeat center center fixed;
+}
+.slide13 {
+    background: url(../../../images/Homepage/h14.jpg) no-repeat center center fixed;
+}
+.slide14 {
+    background: url(../../../images/Homepage/h15.jpg) no-repeat center center fixed;
+}
+
+
+ .slide0, .slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8, .slide9,
+ .slide10, .slide11, .slide12, .slide13, .slide14 {
+
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   min-height: 100vh;
+
+  //  margin-top: -100px;
+   font-family: 'Megrim', sans-serif;
+   color:white;
+  //  -webkit-text-stroke: 2px white;
+
+   span{
+    // line-height: 100px;
+   }
+
+
+ }
+
+ .heroinner {
+  //  background: rgba(0,0,0,0.5);
+   min-height: 100vh;
+   vertical-align: middle;
+   ul {
+   list-style: none;
+   display: table-cell;
+   vertical-align: middle;
+   font-size: 5.7vw;
+   line-height: 6.3vw;
+   margin-bottom: 1vw;
+   min-width: 100vw;
+   height: calc(100vh - 50px);
+   }
+   ul li {
+     margin:0px auto;
+     margin-left: -40px;
+     color: white;
+     display: block;
+    //  width: 100%;
+     text-align: center;
+   }
+   .photo {
+     font-size: 2.7vw;
+     line-height: 3.3vw;
+   }
+ }
+ // .herologoinner {
+ //   background: url(../../../images/logo.png) no-repeat center center;
+ //   background-size: contain;
+ // }
+ .navbutton {
+   position: fixed;
+   z-index: 10;
+   margin: 0px;
+   padding: 0px;
+   top: 15px; left: 15px;
+   color: white;
+
+ }
+
+#homemenu {
+  color: white;
+}

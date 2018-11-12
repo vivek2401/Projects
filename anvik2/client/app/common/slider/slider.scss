@@ -1,0 +1,135 @@
+@import '../common';
+
+
+
+.slider {
+  margin: 0px auto;
+  height: auto;
+  background: transparent;
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+  }
+  .sliderimg {
+    .slidecenter {
+      position: relative;
+      margin: 0px auto;
+      max-width: 100%;
+      border: 5px groove black;
+      border: 10px solid transparent;
+      padding: 5px;
+      padding-bottom: 2px;
+      -webkit-border-image: url(http://eskipaper.com/images/colors-background-2.jpg) 30 stretch; /* Safari 3.1-5 */
+      -o-border-image: url(http://eskipaper.com/images/colors-background-2.jpg) 30 stretch; /* Opera 11-12.1 */
+      border-image: url(http://eskipaper.com/images/colors-background-2.jpg) 30 stretch;
+    }
+     div i{
+       color: rgba(0,0,0,0.4);
+       cursor: pointer;
+     }
+     div:focus {
+       outline: 0;
+     /* or */
+     outline: none;
+     }
+     .sliderleft {
+       position: absolute;
+       top: 40%;
+       left: 2%;
+     }
+     .sliderright {
+       position: absolute;
+       top: 40%;
+       right: 2%;
+     }
+  }
+  .slidecontrol i {
+    // color: red;
+  }
+}
+
+
+
+.sliderouter {
+  min-height: calc(100vh - 100px);
+}
+.sliderinner {
+  min-height: calc(100vh - 100px);
+  vertical-align: middle;
+  .ul {
+  list-style: none;
+  display: table-cell;
+  vertical-align: middle;
+  font-size:4vw;
+  line-height: 5.3vw;
+  margin-bottom: 1vw;
+  min-width: inherit;
+  height: calc(100vh - 100px);
+  }
+  .ul li {
+    line-height: calc(100vh - 100px);
+    display: block;
+    width: 100%;
+    //  background: $lightBgColor;
+    text-align: center;
+  }
+  .ul li:hover {
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .ul li:focus {
+    outline: none;
+    border: 0;
+ }
+
+ .imgclass {
+   max-height: calc(100vh - 100px);
+   line-height: calc(100vh - 100px);
+   vertical-align: middle;
+   max-width: 100%;
+   margin: auto;
+   float: center;
+ }
+ .sliderbackground {
+   -webkit-background-size: contain;
+   -moz-background-size: contain;
+   -o-background-size: contain;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center center;
+   min-height: calc(100vh - 100px);
+ }
+ .sliderbackgroundinner {
+   z-index: -1;
+   position: absolute;
+   display: block;
+   margin-bottom: 60px;
+   max-height: calc(100vh - 100px);
+   overflow: hidden;
+   ul {
+   list-style: none;
+   display: table-cell;
+   vertical-align: middle;
+   font-size: 3.5vw;
+   line-height: 4.4vw;
+   margin-bottom: 1vw;
+   width: 100vw;
+   height: calc(100vh - 100px);
+   font-family: 'Megrim', sans-serif;
+   }
+   ul li {
+     margin:0px auto;
+    //  margin-left: -40px;
+     color: black;
+     display: block;
+     width: 100%;
+     text-align: center;
+   }
+   .photo {
+     font-size: 2.7vw;
+     line-height: 3.3vw;
+   }
+ }
+
+}

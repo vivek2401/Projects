@@ -1,0 +1,159 @@
+@import '../../common/common';
+
+
+
+.gallery {
+  // background: url(../../../images/background.jpg) no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+
+  h1 {
+    font-family: 'Megrim', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+  }
+
+}
+.family, .kids, .maternity, .wedding {
+  // width: 100%;
+  img {
+    width:100%;
+    display: block;
+    margin: 15px auto;
+  }
+  img:focus {
+    outline: none;
+    border: 0;
+ }
+}
+
+.timeline {
+  overflow: hidden;
+  img {
+    width:100%;
+    display: block;
+    margin: 15px auto;
+    height: auto;
+  }
+  img:focus {
+    outline: none;
+    border: 0;
+ }
+}
+
+.sample-show-hide {
+  transition: all linear 2s;
+  // transition: all 2s ease-in;
+  // transform: scale(0.5);
+}
+.sample-show-hide.ng-show {
+  transition: all linear 2s;
+  opacity: 1;
+  // transition: all 2s ease-in;
+  // transform: scale(1.5);
+}
+.sample-show-hide.ng-hide {
+  transition: all linear 0s;
+  opacity: 0;
+}
+
+
+.family:focus, .kids:focus, .maternity:focus, .wedding:focus {
+  outline: none;
+  border: 0;
+}
+.menuheader {
+  font-family: 'Megrim', sans-serif;
+  font-size: 40px;
+  line-height: 80px;
+  height: 80px;
+  width: 100%;
+  position: relative;
+  text-shadow: 0px 0px 9px rgba(150, 150, 150, 1);
+}
+.menuheadertitle {
+  width: 70%;
+  text-align: center;
+  margin:0px auto;
+}
+.menuheaderspan {
+  margin:0px auto;
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  position: absolute;
+  top: 60px;
+  left: 15%;
+  width: 70%;
+}
+@media only screen and (max-width: 600px) {
+    .menuheaderspan {
+    font-size: 11px;
+}
+}
+#gallerymenu {
+  position: static;
+  margin: 15px 15px;
+}
+
+.md-dialog-container {
+  background: transparent;
+}
+md-dialog {
+  background: white;
+  box-shadow: none;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.galleryinner {
+  height: auto;
+  vertical-align: middle;
+
+.gallerybanner {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto;
+}
+
+
+.gallerybannerinner {
+  z-index: -1;
+  position: absolute;
+  display: block;
+  margin-bottom: 60px;
+  height: auto;
+  overflow: hidden;
+  text-shadow: 0px 0px 9px rgba(150, 150, 150, 1);
+  ul {
+  list-style: none;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 5.5vw;
+  line-height: 6.3vw;
+  margin-bottom: 1vw;
+  width: 100vw;
+  height: calc(80vh - 100px);
+  font-family: 'Megrim', sans-serif;
+  }
+  ul li {
+    margin:0px auto;
+   //  margin-left: -40px;
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .photo {
+    font-size: 2.7vw;
+    line-height: 3.3vw;
+  }
+}
+}

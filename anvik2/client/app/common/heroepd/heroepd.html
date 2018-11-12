@@ -1,0 +1,52 @@
+
+<i ng-click="$ctrl.toggle()" class="fa fa-bars fa-2x navbutton" id="homemenu"></i>
+
+<div style="position:relative;">
+
+<div hide show-gt-sm  class="divwrapper div1">
+<div ng-click="$ctrl.movetogallery()" class="divwrapperinner"  ng-repeat="src in $ctrl.slides track by $index"  flex>
+<div ng-class="src" class="heroepd heroepdout" ng-show="$ctrl.currentIndex == $index" flex>
+</div>
+</div>
+</div>
+<div hide show-gt-sm  class="divwrapper div2">
+<div ng-click="$ctrl.movetogallery()" class="divwrapperinner newdiv"  ng-repeat="src in $ctrl.slides track by $index"  flex>
+<div ng-class="src" class="heroepd heroepdout" ng-show="$ctrl.currentIndex == $index" flex>
+</div>
+</div>
+</div>
+<div hide show-gt-sm  class="divwrapper div3">
+<div ng-click="$ctrl.movetogallery()" class="divwrapperinner" ng-repeat="src in $ctrl.slides track by $index"  flex>
+<div ng-class="src" class="heroepd heroepdout" ng-show="$ctrl.currentIndex == $index" flex>
+</div>
+</div>
+</div>
+
+<div hide show-sm show-xs   class="mobileview mb1">
+<div ng-click="$ctrl.movetogallery()"  ng-repeat="src in $ctrl.slides track by $index"  flex>
+<div ng-class="src" class="mobileheroepd heroepdout" ng-show="$ctrl.currentIndex == $index" flex>
+</div>
+</div>
+</div>
+<div hide show-sm show-xs   class="mobileview mb2">
+<div ng-click="$ctrl.movetogallery()"    ng-repeat="src in $ctrl.slides track by $index"  flex>
+<div ng-class="src" class="mobileheroepd heroepdout" ng-show="$ctrl.currentIndex == $index" flex>
+</div>
+</div>
+</div>
+<div hide show-sm show-xs   class="mobileview mb3">
+<div ng-click="$ctrl.movetogallery()"  ng-repeat="src in $ctrl.slides track by $index"  flex>
+<div ng-class="src" class="mobileheroepd heroepdout" ng-show="$ctrl.currentIndex == $index" flex>
+</div>
+</div>
+</div>
+
+</div>
+
+<div style="visibility: hidden">
+  <div class="md-dialog-container" id="myDialog">
+    <md-dialog layout-padding>
+      <menu></menu>
+    </md-dialog>
+  </div>
+</div>
